@@ -6,4 +6,5 @@
     <string name="desc">Enter the description</string>
     <string name="enterTitle">Enter the title</string>
     <string name="EditNote">Edit Note.</string>
+    <string name="AddNote">Add Note.</string>
 </resources>
