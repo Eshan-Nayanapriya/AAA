@@ -1,5 +1,6 @@
 package com.example.taskmanagementapplication
 
+import android.app.AlertDialog
 import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
@@ -40,11 +41,26 @@ class NotesAdapter(private var notes: List<Note>, context: Context) :
             holder.itemView.context.startActivity(intent)
         }
 
-        holder.deleteButton.setOnClickListener{
-            db.deleteNote(note.id)
-            refreshData(db.getAllNotes())
-            Toast.makeText(holder.itemView.context, "Note Deleted", Toast.LENGTH_SHORT).show()
+        holder.deleteButton.setOnClickListener {
+            showDeleteConfirmationDialog(holder.itemView.context, note)
         }
+    }
+
+    private fun showDeleteConfirmationDialog(context: Context, note: Note) {
+        val builder = AlertDialog.Builder(context)
+        builder.setTitle("Confirm Deletion")
+            .setMessage("Are you sure you want to delete this note?")
+            .setPositiveButton("Yes") { _, _ ->
+                // User confirmed deletion
+                db.deleteNote(note.id)
+                refreshData(db.getAllNotes())
+                Toast.makeText(context, "Note Deleted", Toast.LENGTH_SHORT).show()
+            }
+            .setNegativeButton("No") { _, _ ->
+                // User cancelled deletion
+                Toast.makeText(context, "Deletion cancelled", Toast.LENGTH_SHORT).show()
+            }
+            .show()
     }
 
     fun refreshData(newNotes: List<Note>){
