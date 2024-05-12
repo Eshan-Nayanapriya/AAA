@@ -31,7 +31,6 @@
         android:background="@drawable/orange_border"
         android:layout_height="34dp"
         android:layout_marginTop="10dp"
-        android:hint="Search notes..."
         android:imeOptions="actionSearch"
         android:layout_below="@id/notesHeading"
         android:inputType="text" />
