@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/notebackground"
     android:padding="16dp"
     tools:context=".UpdateNoteActivity">
 
@@ -15,19 +16,19 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="16dp"
-        android:fontFamily="@font/poppins"
+        android:fontFamily="@font/autour_one"
         android:text="@string/EditNote"
-        android:textColor="@color/orange"
+        android:textColor="@color/darkGreen"
         android:textSize="24sp" />
 
     <ImageView
         android:id="@+id/updateSaveButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/baseline_done_24"
+        android:layout_width="38dp"
+        android:layout_height="28dp"
+        android:src="@drawable/checkbox"
         android:layout_alignParentEnd="true"
         android:layout_alignTop="@id/editNoteHeading"
-        android:layout_marginEnd="6dp" />
+        android:layout_marginEnd="3dp" />
 
     <EditText
         android:id="@+id/updateTitleEditText"
