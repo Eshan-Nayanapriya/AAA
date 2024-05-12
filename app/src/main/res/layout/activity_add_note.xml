@@ -15,7 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="25dp"
         android:fontFamily="@font/autour_one"
         android:text="@string/AddNote"
         android:textColor="@color/darkGreen"
@@ -49,7 +49,7 @@
            android:textSize="20sp"
            android:layout_below="@id/addNoteHeading"
            android:background="@drawable/title_border"
-           android:layout_marginTop="16dp"
+           android:layout_marginTop="45dp"
            android:maxLines="1"
            android:fontFamily="@font/poppins"/>
 
@@ -59,8 +59,8 @@
         android:layout_height="match_parent"
         android:layout_below="@id/titleEditText"
         android:layout_marginTop="12dp"
-        android:layout_marginBottom="50dp"
-        android:background="@drawable/orange_border"
+        android:layout_marginBottom="160dp"
+        android:background="@drawable/blue_border"
         android:fontFamily="@font/poppins"
         android:gravity="top"
         android:hint="@string/desc"

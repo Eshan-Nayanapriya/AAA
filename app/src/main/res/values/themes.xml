@@ -3,9 +3,12 @@
     <style name="Base.Theme.TaskManagementApplication" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <item name="colorPrimary">@color/orange</item>
-        <item name="colorPrimaryVariant">@color/orange</item>
-        <item name="android:statusBarColor">@color/orange</item>
+        <item name="colorPrimaryVariant">#418C2D</item>
+        <item name="android:statusBarColor">@color/blue</item>
     </style>
 
-    <style name="Theme.TaskManagementApplication" parent="Base.Theme.TaskManagementApplication" />
+    <style name="Theme.TaskManagementApplication" parent="Base.Theme.TaskManagementApplication">
+        <item name="android:statusBarColor">@color/blue</item>
+        <item name="android:textColorPrimary">@color/black</item>
+    </style>
 </resources>

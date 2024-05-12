@@ -1,5 +1,6 @@
 package com.example.taskmanagementapplication
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -35,6 +36,12 @@ class UpdateNoteActivity : AppCompatActivity() {
             db.updateNote(updatedNote)
             finish()
             Toast.makeText(this, "Changes Saved", Toast.LENGTH_SHORT).show()
+        }
+
+        //cancel update
+        binding.CancelButton.setOnClickListener{
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
 
     }

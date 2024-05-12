@@ -15,11 +15,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="25dp"
         android:fontFamily="@font/autour_one"
         android:text="@string/EditNote"
         android:textColor="@color/darkGreen"
         android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/CancelButton"
+        android:layout_width="38dp"
+        android:layout_height="34dp"
+        android:layout_alignTop="@id/editNoteHeading"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-3dp"
+        android:layout_marginEnd="38dp"
+        android:src="@drawable/baseline_cancel_24" />
 
     <ImageView
         android:id="@+id/updateSaveButton"
@@ -38,8 +48,8 @@
         android:padding="12dp"
         android:textSize="20sp"
         android:layout_below="@id/editNoteHeading"
-        android:background="@drawable/orange_border"
-        android:layout_marginTop="16dp"
+        android:background="@drawable/title_border"
+        android:layout_marginTop="45dp"
         android:maxLines="1"
         android:fontFamily="@font/poppins"/>
 
@@ -48,11 +58,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:hint="@string/desc"
+        android:layout_marginBottom="160dp"
         android:gravity="top"
         android:padding="12dp"
         android:textSize="18sp"
         android:layout_below="@id/updateTitleEditText"
-        android:background="@drawable/orange_border"
+        android:background="@drawable/blue_border"
         android:layout_marginTop="12dp"
         android:fontFamily="@font/poppins"/>
 
