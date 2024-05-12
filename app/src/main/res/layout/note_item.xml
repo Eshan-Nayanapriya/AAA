@@ -23,11 +23,11 @@
                 android:id="@+id/titleTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
                 android:text="@string/title"
-                android:fontFamily="@font/poppins"
+                android:textColor="@color/blue"
                 android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="@color/blue" />
+                android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/updateButton"

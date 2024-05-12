@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/notebackground"
     tools:context=".MainActivity">
 
     <TextView
@@ -11,12 +12,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/poppins"
-        android:text="@string/notes"
         android:layout_marginStart="18dp"
-        android:textColor="@color/orange"
-        android:textSize="24sp" />
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/autour_one"
+        android:text="@string/notes"
+        android:textColor="@color/darkGreen"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/notesRecyclerView"
