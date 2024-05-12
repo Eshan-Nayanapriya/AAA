@@ -2,6 +2,7 @@ package com.example.taskmanagementapplication
 
 import android.os.Bundle
 import android.widget.Toast
+import android.content.Intent
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -20,6 +21,7 @@ class AddNoteActivity : AppCompatActivity() {
 
         db = NotesDatabaseHelper(this)
 
+        //saving data to database
         binding.saveButton.setOnClickListener{
             val title = binding.titleEditText.text.toString()
             val content = binding.contentEditText.text.toString()
@@ -27,6 +29,12 @@ class AddNoteActivity : AppCompatActivity() {
             db.insertNote(note)
             finish()
             Toast.makeText(this, "Note Saved", Toast.LENGTH_SHORT).show()
+        }
+
+        //cancel insert
+        binding.CancelButton.setOnClickListener{
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
     }
 }
